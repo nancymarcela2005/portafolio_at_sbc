@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Aprendizaje Bíblico Digital: Del Desierto a la Tierra Prometida (Deuteronomio 1-4). Seminario Bíblico - Cúcuta.">
+  <title>Portafolio de Aprendizaje: Del Desierto a la Tierra Prometida (Deuteronomio 1–4)</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top App Navigation Controls -->
+  <header class="app-header">
+    <div class="header-title">
+      <svg width="22" height="22" viewBox="0 0 24 24">
+        <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/>
+      </svg>
+      <span>SEMINARIO BÍBLICO CÚCUTA &bull; DEUTERONOMIO 1–4</span>
+    </div>
+    <div class="header-actions">
+      <button id="btnIndex" class="btn-icon" aria-label="Volver al índice">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+        <span>Índice</span>
+      </button>
+      <button id="btnReadingMode" class="btn-icon" aria-label="Activar modo lectura">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg>
+        <span>Modo Lectura</span>
+      </button>
+      <button id="btnDarkMode" class="btn-icon" aria-label="Alternar modo pergamino u oscuro">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+        <span>Modo Oscuro</span>
+      </button>
+      <button id="btnSoundToggle" class="btn-icon" aria-label="Alternar sonido de hojas">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+        <span id="soundLabel">Sonido: ON</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Viewport containing the Single Parchment Sheet Container -->
+  <main class="main-viewport">
+    <div class="book-wrapper">
+      <div class="book-container">
+
+        <!-- ================= PAGE 1: PORTADA ================= -->
+        <section id="page-1" class="book-page active">
+          <div class="book-page-decoration"></div>
+          <div class="corner-flourish top-left"></div>
+          <div class="corner-flourish top-right"></div>
+          <div class="corner-flourish bottom-left"></div>
+          <div class="corner-flourish bottom-right"></div>
+          <div class="corner-fold-hint" onclick="nextPage()" title="Pasar hoja adelante"></div>
+
+          <div class="page-header-tag">
+            <span class="page-chapter-badge">Seminario Bíblico – Cúcuta</span>
+            <p class="page-subtitle">Antiguo Testamento I &bull; Unidad Didáctica #3 – Actividad de Aprendizaje #3</p>
+          </div>
+
+          <h1 class="page-title">PORTAFOLIO DE APRENDIZAJE:<br>DEL DESIERTO A LA TIERRA PROMETIDA</h1>
+          <p class="page-subtitle" style="font-size:1.3rem; font-weight:600; color:var(--text-gold);">DEUTERONOMIO CAPÍTULOS 1, 2, 3 Y 4</p>
+
+          <div class="cover-grid">
+            <div class="cover-illustration-box">
+              <img src="assets/portada.png" alt="Moisés y el pueblo de Israel contemplando la Tierra Prometida desde el desierto">
+            </div>
+            <div class="cover-academic-info">
+              <div class="academic-badge">INFORMACIÓN DEL TRABAJO ACADÉMICO</div>
+              <div class="academic-detail-item">
+                <div class="academic-detail-label">Integrantes del Grupo:</div>
+                <div class="academic-detail-value">&bull; Mariana Ramírez Rueda<br>&bull; Nancy Marcela Alvarez Garnica</div>
+              </div>
+              <div class="academic-detail-item">
+                <div class="academic-detail-label">Docente Asignada:</div>
+                <div class="academic-detail-value">Arelys Caicedo</div>
+              </div>
+              <div class="academic-detail-item">
+                <div class="academic-detail-label">Fecha de Entrega:</div>
+                <div class="academic-detail-value">10 de septiembre de 2026</div>
+              </div>
+              <div class="academic-detail-item">
+                <div class="academic-detail-label">Enfoque Metodológico:</div>
+                <div class="academic-detail-value">Exégesis, Síntesis Teológica y Aplicación Pastoral</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slogan-ribbon">
+            <div class="slogan-main">Recordar &rarr; Aprender &rarr; Creer &rarr; Obedecer &rarr; Avanzar</div>
+            <div class="slogan-quote">&ldquo;No olvides lo que Dios ha hecho; obedece lo que Dios ha dicho.&rdquo;</div>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 2: ÍNDICE INTERACTIVO ================= -->
+        <section id="page-2" class="book-page">
+          <div class="book-page-decoration"></div>
+          <div class="corner-flourish top-left"></div><div class="corner-flourish top-right"></div>
+          <div class="corner-flourish bottom-left"></div><div class="corner-flourish bottom-right"></div>
+          <div class="corner-fold-hint-left" onclick="prevPage()" title="Volver hoja atrás"></div>
+          <div class="corner-fold-hint" onclick="nextPage()" title="Pasar hoja adelante"></div>
+
+          <div class="page-header-tag">
+            <span class="page-chapter-badge">Tabla de Contenidos</span>
+            <h2 class="page-title">Índice Interactivo del Libro</h2>
+          </div>
+
+          <div class="toc-grid">
+            <div class="toc-card" onclick="goToPage(3)">
+              <div class="toc-num">SECCIÓN I</div>
+              <div class="toc-title">1. Introducción Académica</div>
+              <div class="toc-desc">Visión general del discurso de Moisés antes de cruzar el Jordán.</div>
+              <div class="toc-action">Ir al Capítulo &rarr;</div>
+            </div>
+
+            <div class="toc-card" onclick="goToPage(4)">
+              <div class="toc-num">SECCIÓN II</div>
+              <div class="toc-title">2. Contexto Histórico y Línea de Tiempo</div>
+              <div class="toc-desc">Recorrido cronológico interactivo del Horeb a las puertas de la promesa.</div>
+              <div class="toc-action">Ir al Capítulo &rarr;</div>
+            </div>
+
+            <div class="toc-card" onclick="goToPage(5)">
+              <div class="toc-num">SECCIÓN III</div>
+              <div class="toc-title">3. Resumen: Deuteronomio 1 y 2</div>
+              <div class="toc-desc">Organizador gráfico sobre Cades-barnea y el sostén divino en el desierto.</div>
+              <div class="toc-action">Ir al Capítulo &rarr;</div>
+            </div>
+
+            <div class="toc-card" onclick="goToPage(6)">
+              <div class="toc-num">SECCIÓN IV</div>
+              <div class="toc-title">4. Resumen: Deuteronomio 3 y 4</div>
+              <div class="toc-desc">Victorias sobre Og, distribución territorial y llamado a la obediencia.</div>
+              <div class="toc-action">Ir al Capítulo &rarr;</div>
+            </div>
+
+            <div class="toc-card" onclick="goToPage(7)">
+              <div class="toc-num">SECCIÓN V</div>
+              <div class="toc-title">5. Estructura y Bosquejo General</div>
+              <div class="toc-desc">Diagrama de flujo jerárquico del mensaje de Moisés y su Idea Central.</div>
+              <div class="toc-action">Ir al Capítulo &rarr;</div>
+            </div>
+
+            <div class="toc-card" onclick="goToPage(8)">
+              <div class="toc-num">SECCIÓN VI</div>
+              <div class="toc-title">6. Personajes Principales</div>
+              <div class="toc-desc">Tabla interactiva con Jehová, Moisés, Josué, Caleb, Sehón y Og.</div>
+              <div class="toc-action">Ir al Capítulo &rarr;</div>
+            </div>
+
+            <div class="toc-card" onclick="goToPage(9)">
+              <div class="toc-num">SECCIÓN VII</div>
+              <div class="toc-title">7. Lugares Geográficos y Mapa Bíblico</div>
+              <div class="toc-desc">Cartografía bíblica interactiva con 12 marcadores históricos.</div>
+              <div class="toc-action">Ir al Capítulo &rarr;</div>
+            </div>
+
+            <div class="toc-card" onclick="goToPage(10)">
+              <div class="toc-num">SECCIÓN VIII</div>
+              <div class="toc-title">8. Palabras Clave</div>
+              <div class="toc-desc">Nube de palabras animada con énfasis teológico y semántico.</div>
+              <div class="toc-action">Ir al Capítulo &rarr;</div>
+            </div>
+
+            <div class="toc-card" onclick="goToPage(11)">
+              <div class="toc-num">SECCIÓN IX</div>
+              <div class="toc-title">9. Enseñanzas Teológicas</div>
+              <div class="toc-desc">Infografía de 9 pilares teológicos del libro de Deuteronomio.</div>
+              <div class="toc-action">Ir al Capítulo &rarr;</div>
+            </div>
+
+            <div class="toc-card" onclick="goToPage(12)">
+              <div class="toc-num">SECCIÓN X</div>
+              <div class="toc-title">10. Aplicaciones para la Iglesia Actual</div>
+              <div class="toc-desc">Cuadro comparativo entre el texto bíblico y la praxis eclesial.</div>
+              <div class="toc-action">Ir al Capítulo &rarr;</div>
+            </div>
+
+            <div class="toc-card" onclick="goToPage(13)">
+              <div class="toc-num">SECCIÓN XI</div>
+              <div class="toc-title">11. Versículos Clave</div>
+              <div class="toc-desc">Carrusel interactivo 3D con versículos emblemáticos y exégesis.</div>
+              <div class="toc-action">Ir al Capítulo &rarr;</div>
+            </div>
+
+            <div class="toc-card" onclick="goToPage(14)">
+              <div class="toc-num">SECCIÓN XII</div>
+              <div class="toc-title">12. Conclusión y Bibliografía</div>
+              <div class="toc-desc">Reflexión teológica integradora y fuentes académicas de consulta.</div>
+              <div class="toc-action">Ir al Capítulo &rarr;</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 3: INTRODUCCIÓN ================= -->
+        <section id="page-3" class="book-page">
+          <div class="book-page-decoration"></div>
+          <div class="corner-flourish top-left"></div><div class="corner-flourish top-right"></div>
+          <div class="corner-flourish bottom-left"></div><div class="corner-flourish bottom-right"></div>
+          <div class="corner-fold-hint-left" onclick="prevPage()" title="Volver hoja atrás"></div>
+          <div class="corner-fold-hint" onclick="nextPage()" title="Pasar hoja adelante"></div>
+
+          <div class="page-header-tag">
+            <span class="page-chapter-badge">Capítulo 1</span>
+            <h2 class="page-title">Introducción General a Deuteronomio 1–4</h2>
+          </div>
+
+          <div class="page-content drop-cap">
+            <p style="margin-bottom: 1.25rem;">Deuteronomio 1–4 presenta el inicio de las palabras finales de Moisés al pueblo de Israel antes de entrar en la Tierra Prometida. En estos capítulos, Moisés recuerda acontecimientos ocurridos durante el largo peregrinaje por el desierto, especialmente la incredulidad de la generación anterior, las victorias que Dios concedió a Israel y la necesidad apremiante de obedecer sus mandamientos.</p>
+
+            <div class="section-illustration-box">
+              <img src="assets/horeb.png" alt="La Teofanía en el Monte Horeb y la entrega de la Ley">
+              <div class="section-illustration-caption">Ilustración: La revelación divina en el Monte Horeb y el pacto de la Ley.</div>
+            </div>
+
+            <p style="margin-bottom: 1.25rem;">Estos capítulos funcionan como una solícita invitación a mirar el pasado para aprender de él y enfrentar el futuro con una fe renovada y obediencia incondicional. Moisés recuerda que Dios había acompañado, sustentado y protegido fielmente a su pueblo a lo largo de cada jornada, pero también demuestra con severa claridad que la desobediencia y la incredulidad traen consecuencias destructivas e irreparable para el pueblo del pacto.</p>
+
+            <div class="verse-highlight-box" style="margin: 1.5rem 0;">
+              <div class="verse-ref">Principio Hermenéutico Clave:</div>
+              <div class="verse-text">&ldquo;Deuteronomio 1–4 enseña que la memoria espiritual no consiste únicamente en recordar acontecimientos históricos, sino en reconocer la fidelidad constante de Dios y responder a ella mediante una vida consagrada a la obediencia.&rdquo;</div>
+            </div>
+
+            <p>Al situarse en las llanuras de Moab, frente a Jericó y a las puertas de Canaán, el discurso mosaico renueva el pacto de Sinaí con la nueva generación que no experimentó la esclavitud de Egipto en su adultez, equipándola espiritualmente para conquistar y poseer la herencia prometida.</p>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 4: CONTEXTO HISTÓRICO & LÍNEA DE TIEMPO ================= -->
+        <section id="page-4" class="book-page">
+          <div class="book-page-decoration"></div>
+          <div class="corner-flourish top-left"></div><div class="corner-flourish top-right"></div>
+          <div class="corner-flourish bottom-left"></div><div class="corner-flourish bottom-right"></div>
+          <div class="corner-fold-hint-left" onclick="prevPage()" title="Volver hoja atrás"></div>
+          <div class="corner-fold-hint" onclick="nextPage()" title="Pasar hoja adelante"></div>
+
+          <div class="page-header-tag">
+            <span class="page-chapter-badge">Capítulo 2 &bull; Cronología Interactiva</span>
+            <h2 class="page-title">DEL HOREB A LAS PUERTAS DE LA TIERRA PROMETIDA</h2>
+            <p class="page-subtitle">Haz clic en cada nodo de la línea de tiempo para explorar los acontecimientos históricos.</p>
+          </div>
+
+          <div class="section-illustration-box">
+            <img src="assets/desierto.png" alt="El peregrinaje por el desierto guiados por la columna de nube">
+            <div class="section-illustration-caption">Ilustración: La columna de gloria guiando a Israel durante su peregrinaje por el gran desierto.</div>
+          </div>
+
+          <div class="timeline-path-container">
+            <!-- Event 1 -->
+            <div class="timeline-event">
+              <div class="timeline-node" onclick="openTimelineModal(1)">1</div>
+              <div class="timeline-card" onclick="openTimelineModal(1)">
+                <div class="timeline-event-num">Evento 1</div>
+                <div class="timeline-event-title">Horeb (El Monte de Dios)</div>
+                <p>Israel recibe las instrucciones y los diez mandamientos directamente del Señor.</p>
+              </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="timeline-event">
+              <div class="timeline-node" onclick="openTimelineModal(2)">2</div>
+              <div class="timeline-card" onclick="openTimelineModal(2)">
+                <div class="timeline-event-num">Evento 2</div>
+                <div class="timeline-event-title">Horeb &rarr; Cades-barnea</div>
+                <p>El pueblo emprende el trayecto ordenado por el desierto hacia la Tierra Prometida.</p>
+              </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="timeline-event">
+              <div class="timeline-node" onclick="openTimelineModal(3)">3</div>
+              <div class="timeline-card" onclick="openTimelineModal(3)">
+                <div class="timeline-event-num">Evento 3</div>
+                <div class="timeline-event-title">Los Espías y la Incredulidad</div>
+                <p>El pueblo envía 12 espías pero cae en el temor y se niega a confiar en Dios.</p>
+              </div>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="timeline-event">
+              <div class="timeline-node" onclick="openTimelineModal(4)">4</div>
+              <div class="timeline-card" onclick="openTimelineModal(4)">
+                <div class="timeline-event-num">Evento 4</div>
+                <div class="timeline-event-title">Consecuencia del Juicio Divino</div>
+                <p>Dios decreta que la generación incrédula perecerá en el desierto sin ver la promesa.</p>
+              </div>
+            </div>
+
+            <!-- Event 5 -->
+            <div class="timeline-event">
+              <div class="timeline-node" onclick="openTimelineModal(5)">5</div>
+              <div class="timeline-card" onclick="openTimelineModal(5)">
+                <div class="timeline-event-num">Evento 5</div>
+                <div class="timeline-event-title">Años de Peregrinación</div>
+                <p>38 años de dar rodeos por el desierto hasta consumirse la generación rebelde.</p>
+              </div>
+            </div>
+
+            <!-- Event 6 -->
+            <div class="timeline-event">
+              <div class="timeline-node" onclick="openTimelineModal(6)">6</div>
+              <div class="timeline-card" onclick="openTimelineModal(6)">
+                <div class="timeline-event-num">Evento 6</div>
+                <div class="timeline-event-title">Instrucciones respecto a Edom, Moab y Amón</div>
+                <p>Dios prohíbe hostigar a los descendientes de Esaú y Lot respetando sus fronteras.</p>
+              </div>
+            </div>
+
+            <!-- Event 7 -->
+            <div class="timeline-event">
+              <div class="timeline-node" onclick="openTimelineModal(7)">7</div>
+              <div class="timeline-card" onclick="openTimelineModal(7)">
+                <div class="timeline-event-num">Evento 7</div>
+                <div class="timeline-event-title">Victoria sobre Sehón, Rey de Hesbón</div>
+                <p>Dios entrega al rey amorreo y a su tierra en manos del ejército israelita.</p>
+              </div>
+            </div>
+
+            <!-- Event 8 -->
+            <div class="timeline-event">
+              <div class="timeline-node" onclick="openTimelineModal(8)">8</div>
+              <div class="timeline-card" onclick="openTimelineModal(8)">
+                <div class="timeline-event-num">Evento 8</div>
+                <div class="timeline-event-title">Victoria sobre Og, Rey de Basán</div>
+                <p>Derrota del gigante Og y conquista de 60 ciudades fortificadas con murallas altas.</p>
+              </div>
+            </div>
+
+            <!-- Event 9 -->
+            <div class="timeline-event">
+              <div class="timeline-node" onclick="openTimelineModal(9)">9</div>
+              <div class="timeline-card" onclick="openTimelineModal(9)">
+                <div class="timeline-event-num">Evento 9</div>
+                <div class="timeline-event-title">Distribución de Territorios Transjordánicos</div>
+                <p>Rubén, Gad y la media tribu de Manasés reciben tierras al oriente del Jordán.</p>
+              </div>
+            </div>
+
+            <!-- Event 10 -->
+            <div class="timeline-event">
+              <div class="timeline-node" onclick="openTimelineModal(10)">10</div>
+              <div class="timeline-card" onclick="openTimelineModal(10)">
+                <div class="timeline-event-num">Evento 10</div>
+                <div class="timeline-event-title">Moisés y el Monte Pisga</div>
+                <p>Moisés suplica entrar en Canaán, pero Dios le concede contemplarla desde la cumbre.</p>
+              </div>
+            </div>
+
+            <!-- Event 11 -->
+            <div class="timeline-event">
+              <div class="timeline-node" onclick="openTimelineModal(11)">11</div>
+              <div class="timeline-card" onclick="openTimelineModal(11)">
+                <div class="timeline-event-num">Evento 11</div>
+                <div class="timeline-event-title">Preparación de la Nueva Generación</div>
+                <p>Exhortación a escuchar los estatutos y decretos para vivir e ingresar a la tierra.</p>
+              </div>
+            </div>
+
+            <!-- Event 12 -->
+            <div class="timeline-event">
+              <div class="timeline-node" onclick="openTimelineModal(12)">12</div>
+              <div class="timeline-card" onclick="openTimelineModal(12)">
+                <div class="timeline-event-num">Evento 12</div>
+                <div class="timeline-event-title">Advertencia contra la Idolatría</div>
+                <p>Llamado a permanecer fieles al único Dios vivo y verdadero que habló en el fuego.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 5: RESUMEN DEUTERONOMIO 1 Y 2 ================= -->
+        <section id="page-5" class="book-page">
+          <div class="book-page-decoration"></div>
+          <div class="corner-flourish top-left"></div><div class="corner-flourish top-right"></div>
+          <div class="corner-flourish bottom-left"></div><div class="corner-flourish bottom-right"></div>
+          <div class="corner-fold-hint-left" onclick="prevPage()" title="Volver hoja atrás"></div>
+          <div class="corner-fold-hint" onclick="nextPage()" title="Pasar hoja adelante"></div>
+
+          <div class="page-header-tag">
+            <span class="page-chapter-badge">Capítulo 3 &bull; Parte I</span>
+            <h2 class="page-title">Organizador Gráfico: Deuteronomio 1 y 2</h2>
+          </div>
+
+          <div class="section-illustration-box">
+            <img src="assets/espias.png" alt="Los doce espías regresando de Canaán con racimos gigantes de uvas">
+            <div class="section-illustration-caption">Ilustración: Los espías retornando de Canaán con el fruto de la buena tierra.</div>
+          </div>
+
+          <div class="summary-chapter-box">
+            <div class="summary-chapter-title">DEUTERONOMIO 1</div>
+            <div class="summary-chapter-topic">Tema Central: Recordar la Incredulidad en Cades-barnea</div>
+            <ul class="summary-bullet-list">
+              <li>Moisés inicia su discurso recordando la partida del monte Horeb por mandato divino.</li>
+              <li>Establecimiento de jueces y líderes capaces sobre millares, centenas y decenas para aligerar la carga de Moisés.</li>
+              <li>Llegada estratégica a Cades-barnea y envío de doce espías a inspeccionar la feracidad de la tierra.</li>
+              <li>Rebelión del pueblo movido por el temor infundado y los informes desalentadores.</li>
+              <li>Juicio de Dios: la generación incrédula perecerá en el desierto; solo Josué y Caleb poseerán la tierra.</li>
+              <li>Intento presuntuoso e inoportuno de subir a la montaña sin la presencia de Dios que resultó en una amarga derrota.</li>
+            </ul>
+            <div class="verse-highlight-box">
+              <div class="verse-ref">Versículo Clave &bull; Deuteronomio 1:8 (RVR1960):</div>
+              <div class="verse-text">&ldquo;Mirad, yo os he entregado la tierra; entrad y poseed la tierra que Jehová juró a vuestros padres Abraham, Isaac y Jacob, que les daría a ellos y a su descendencia después de ellos.&rdquo;</div>
+            </div>
+          </div>
+
+          <div class="summary-chapter-box">
+            <div class="summary-chapter-title">DEUTERONOMIO 2</div>
+            <div class="summary-chapter-topic">Tema Central: Dios Guía el Camino y Concede la Victoria</div>
+            <ul class="summary-bullet-list">
+              <li>Reinicio del peregrinaje rodeando el monte Seir durante largos años bajo el cuidado de Dios.</li>
+              <li>Instrucciones estrictas de no provocar a Edom (descendientes de Esaú) ni a Moab y Amón (descendientes de Lot).</li>
+              <li>Recordatorio de la provisión divina en el desierto: nada le faltó al pueblo durante 40 años.</li>
+              <li>Cruce del arroyo de Zered y fin de la generación de los hombres de guerra incrédulos.</li>
+              <li>Enfrentamiento y victoria aplastante sobre Sehón, rey de Hesbón, a quien Dios entregó en manos israelitas.</li>
+            </ul>
+            <div class="verse-highlight-box">
+              <div class="verse-ref">Versículo Clave &bull; Deuteronomio 2:7 (RVR1960):</div>
+              <div class="verse-text">&ldquo;Pues Jehová tu Dios te ha bendecido en toda obra de tus manos; él sabe que andas por este gran desierto; estos cuarenta años Jehová tu Dios ha estado contigo, y nada te ha faltado.&rdquo;</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 6: RESUMEN DEUTERONOMIO 3 Y 4 ================= -->
+        <section id="page-6" class="book-page">
+          <div class="book-page-decoration"></div>
+          <div class="corner-flourish top-left"></div><div class="corner-flourish top-right"></div>
+          <div class="corner-flourish bottom-left"></div><div class="corner-flourish bottom-right"></div>
+          <div class="corner-fold-hint-left" onclick="prevPage()" title="Volver hoja atrás"></div>
+          <div class="corner-fold-hint" onclick="nextPage()" title="Pasar hoja adelante"></div>
+
+          <div class="page-header-tag">
+            <span class="page-chapter-badge">Capítulo 3 &bull; Parte II</span>
+            <h2 class="page-title">Organizador Gráfico: Deuteronomio 3 y 4</h2>
+          </div>
+
+          <div class="section-illustration-box">
+            <img src="assets/pisga.png" alt="Moisés en la cumbre del Monte Pisga contemplando la Tierra Prometida al atardecer">
+            <div class="section-illustration-caption">Ilustración: Retrato de Moisés en el monte Pisga contemplando Canaán.</div>
+          </div>
+
+          <div class="summary-chapter-box">
+            <div class="summary-chapter-title">DEUTERONOMIO 3</div>
+            <div class="summary-chapter-topic">Tema Central: Victoria, Liderazgo y Preparación para el Futuro</div>
+            <ul class="summary-bullet-list">
+              <li>Enfrentamiento contra Og, rey de Basán, gigante fortificado en Edrei, a quien Dios también derrotó.</li>
+              <li>Conquista de 60 ciudades fortificadas y reparto del botín entre las tribus de Israel.</li>
+              <li>Asignación territorial en la Transjordania a Rubén, Gad y la media tribu de Manasés bajo el pacto de ir armados a ayudar a sus hermanos.</li>
+              <li>Moisés fortalece y comisiona a Josué para liderar la conquista del otro lado del Jordán.</li>
+              <li>Oración ferviente de Moisés para cruzar el Jordán; Dios le niega el ingreso pero le permite ver la tierra desde el cumbre del Pisga.</li>
+            </ul>
+            <div class="verse-highlight-box">
+              <div class="verse-ref">Versículo Clave &bull; Deuteronomio 3:22 (RVR1960):</div>
+              <div class="verse-text">&ldquo;No los temáis; porque Jehová vuestro Dios, él es el que pelea por vosotros.&rdquo;</div>
+            </div>
+          </div>
+
+          <div class="summary-chapter-box">
+            <div class="summary-chapter-title">DEUTERONOMIO 4</div>
+            <div class="summary-chapter-topic">Tema Central: Obediencia, Memoria y Fidelidad al Único Dios</div>
+            <ul class="summary-bullet-list">
+              <li>Exhortación vehemente a escuchar y cumplir la ley divina sin añadir ni quitar nada a la Palabra.</li>
+              <li>Recordatorio solemne del pacto en Horeb donde el pueblo escuchó la voz de Dios salir del fuego sin ver figura alguna.</li>
+              <li>Advertencia tajante contra toda forma de idolatría, culto a imágenes esculpidas o a los astros celestes.</li>
+              <li>Proclamación de la singularidad soberana de Dios: Jehová es el único Dios en los cielos y en la tierra.</li>
+              <li>Establecimiento de las tres ciudades de refugio al oriente del Jordán (Beser, Ramot y Golán).</li>
+            </ul>
+            <div class="verse-highlight-box">
+              <div class="verse-ref">Versículos Clave &bull; Deuteronomio 4:1 y 4:39 (RVR1960):</div>
+              <div class="verse-text">&ldquo;Ahora, pues, oh Israel, oye los estatutos y decretos que yo os enseño... Aprende pues, hoy, y reflexiona en tu corazón que Jehová es Dios arriba en el cielo y abajo en la tierra, y no hay otro.&rdquo;</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 7: ESTRUCTURA Y BOSQUEJO GENERAL ================= -->
+        <section id="page-7" class="book-page">
+          <div class="book-page-decoration"></div>
+          <div class="corner-flourish top-left"></div><div class="corner-flourish top-right"></div>
+          <div class="corner-flourish bottom-left"></div><div class="corner-flourish bottom-right"></div>
+          <div class="corner-fold-hint-left" onclick="prevPage()" title="Volver hoja atrás"></div>
+          <div class="corner-fold-hint" onclick="nextPage()" title="Pasar hoja adelante"></div>
+
+          <div class="page-header-tag">
+            <span class="page-chapter-badge">Capítulo 4</span>
+            <h2 class="page-title">Estructura y Bosquejo General Jerárquico</h2>
+          </div>
+
+          <div class="outline-diagram">
+            <div class="outline-node">
+              <div class="outline-roman">I. MIRAR HACIA ATRÁS (Deuteronomio 1)</div>
+              <div class="outline-title">Lecciones de la experiencia del desierto</div>
+              <ul class="outline-bullets">
+                <li>Partida de Horeb</li><li>Cades-barnea</li><li>Misión de los Espías</li><li>Rebelión e Incredulidad</li><li>Consecuencia del Juicio</li>
+              </ul>
+            </div>
+
+            <div class="outline-arrow">&darr;</div>
+
+            <div class="outline-node">
+              <div class="outline-roman">II. DIOS SOSTIENE DURANTE EL CAMINO (Deuteronomio 2)</div>
+              <div class="outline-title">Protección divina y primeras conquistas</div>
+              <ul class="outline-bullets">
+                <li>Travesía por Seir</li><li>Respeto a Edom, Moab y Amón</li><li>Victoria sobre Sehón rey de Hesbón</li>
+              </ul>
+            </div>
+
+            <div class="outline-arrow">&darr;</div>
+
+            <div class="outline-node">
+              <div class="outline-roman">III. DIOS CONCEDE LA VICTORIA Y PREPARA NUEVOS LÍDERES (Deuteronomio 3)</div>
+              <div class="outline-title">Conquista de Basán y transición de liderazgo</div>
+              <ul class="outline-bullets">
+                <li>Derrota de Og rey de Basán</li><li>Distribución de la Transjordania</li><li>Comisión de Josué</li><li>Moisés contempla la tierra desde Pisga</li>
+              </ul>
+            </div>
+
+            <div class="outline-arrow">&darr;</div>
+
+            <div class="outline-node">
+              <div class="outline-roman">IV. MIRAR HACIA ADELANTE CON OBEDIENCIA (Deuteronomio 4)</div>
+              <div class="outline-title">Exhortación a la fidelidad del Pacto</div>
+              <ul class="outline-bullets">
+                <li>Escuchar y Obedecer</li><li>Recordar la Teofanía de Horeb</li><li>Prohibición de la Idolatría</li><li>Proclamación: Jehová es Dios Único</li>
+              </ul>
+            </div>
+
+            <div class="outline-arrow">&darr;</div>
+
+            <div class="outline-central-idea">
+              <div class="central-idea-label">IDEA CENTRAL DEL BLOQUE TEOLÓGICO</div>
+              <div class="central-idea-text">&ldquo;El pueblo de Dios debe aprender de su pasado histórico, reconocer la absoluta fidelidad del Señor que lo ha sostenido y avanzar decididamente hacia la promesa divina mediante una fe obediente e incondicional.&rdquo;</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 8: PERSONAJES PRINCIPALES ================= -->
+        <section id="page-8" class="book-page">
+          <div class="book-page-decoration"></div>
+          <div class="corner-flourish top-left"></div><div class="corner-flourish top-right"></div>
+          <div class="corner-flourish bottom-left"></div><div class="corner-flourish bottom-right"></div>
+          <div class="corner-fold-hint-left" onclick="prevPage()" title="Volver hoja atrás"></div>
+          <div class="corner-fold-hint" onclick="nextPage()" title="Pasar hoja adelante"></div>
+
+          <div class="page-header-tag">
+            <span class="page-chapter-badge">Capítulo 5 &bull; Análisis de Actores</span>
+            <h2 class="page-title">Personajes Principales de Deuteronomio 1–4</h2>
+            <p class="page-subtitle">Haz clic sobre cualquier personaje para inspeccionar los detalles académicos completos.</p>
+          </div>
+
+          <div class="character-table-container">
+            <table class="character-table">
+              <thead>
+                <tr>
+                  <th>Personaje</th>
+                  <th>Función en el Relato</th>
+                  <th>Características</th>
+                  <th>Enseñanza Teológica</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr onclick="openCharacterModal('jehova')">
+                  <td class="character-name-badge">Jehová Dios</td>
+                  <td>Guía, sostiene, juzga, protege y concede victorias a Israel.</td>
+                  <td>Fiel, santo, poderoso, justo y misericordioso.</td>
+                  <td>Dios permanece fiel a sus promesas y exige santidad a su pueblo.</td>
+                </tr>
+                <tr onclick="openCharacterModal('moises')">
+                  <td class="character-name-badge">Moisés</td>
+                  <td>Líder, profeta y mediador que exhorta al pueblo.</td>
+                  <td>Enseñador, abnegado, intercesor y visionario.</td>
+                  <td>El verdadero liderazgo capacita y prepara a las nuevas generaciones.</td>
+                </tr>
+                <tr onclick="openCharacterModal('josue')">
+                  <td class="character-name-badge">Josué</td>
+                  <td>Servidor y sucesor comisionado para cruzar el Jordán.</td>
+                  <td>Valiente, obediente y lleno de fe.</td>
+                  <td>Dios continuamente levanta nuevos servidores para sus propósitos.</td>
+                </tr>
+                <tr onclick="openCharacterModal('caleb')">
+                  <td class="character-name-badge">Caleb</td>
+                  <td>Espía fiel que confió en la promesa divina.</td>
+                  <td>Integro, perseverante y confiado.</td>
+                  <td>La fe auténtica mira los obstáculos desde la soberanía divina.</td>
+                </tr>
+                <tr onclick="openCharacterModal('sehon')">
+                  <td class="character-name-badge">Sehón</td>
+                  <td>Rey de Hesbón que se opuso al paso de Israel.</td>
+                  <td>Orgulloso y de corazón obstinado.</td>
+                  <td>Cualquier oposición humana sucumbe ante la voluntad de Dios.</td>
+                </tr>
+                <tr onclick="openCharacterModal('og')">
+                  <td class="character-name-badge">Og</td>
+                  <td>Rey de Basán, último remanente de los gigantes (Refaítas).</td>
+                  <td>Imponente, poderoso militarmente.</td>
+                  <td>Ningún enemigo por grande que sea supera el poder del Señor.</td>
+                </tr>
+                <tr onclick="openCharacterModal('pueblo')">
+                  <td class="character-name-badge">Pueblo de Israel</td>
+                  <td>Comunidad receptora del pacto y destinataria del discurso.</td>
+                  <td>En transición, llamada a recordar y obedecer.</td>
+                  <td>Debe aprender de su historia para no repetir la incredulidad.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 9: LUGARES GEOGRÁFICOS Y MAPA BÍBLICO ================= -->
+        <section id="page-9" class="book-page">
+          <div class="book-page-decoration"></div>
+          <div class="corner-flourish top-left"></div><div class="corner-flourish top-right"></div>
+          <div class="corner-flourish bottom-left"></div><div class="corner-flourish bottom-right"></div>
+          <div class="corner-fold-hint-left" onclick="prevPage()" title="Volver hoja atrás"></div>
+          <div class="corner-fold-hint" onclick="nextPage()" title="Pasar hoja adelante"></div>
+
+          <div class="page-header-tag">
+            <span class="page-chapter-badge">Capítulo 6 &bull; Geografía Sagrada</span>
+            <h2 class="page-title">Mapa Bíblico e Itinerario del Desierto</h2>
+            <p class="page-subtitle">Haz clic sobre los marcadores interactivos en el mapa para explorar cada región.</p>
+          </div>
+
+          <div class="map-viewport">
+            <img src="assets/mapa.png" alt="Mapa interactivo del itinerario de Israel por la Transjordania">
+
+            <!-- Map Pins -->
+            <div class="map-pin" style="top:80%; left:22%;" onclick="showMapLocation('horeb')">
+              <span class="map-pin-label">Horeb</span>
+            </div>
+            <div class="map-pin" style="top:68%; left:30%;" onclick="showMapLocation('cades')">
+              <span class="map-pin-label">Cades-barnea</span>
+            </div>
+            <div class="map-pin" style="top:75%; left:45%;" onclick="showMapLocation('seir')">
+              <span class="map-pin-label">Seir</span>
+            </div>
+            <div class="map-pin" style="top:62%; left:48%;" onclick="showMapLocation('edom')">
+              <span class="map-pin-label">Edom</span>
+            </div>
+            <div class="map-pin" style="top:50%; left:52%;" onclick="showMapLocation('moab')">
+              <span class="map-pin-label">Moab</span>
+            </div>
+            <div class="map-pin" style="top:42%; left:62%;" onclick="showMapLocation('amon')">
+              <span class="map-pin-label">Amón</span>
+            </div>
+            <div class="map-pin" style="top:48%; left:56%;" onclick="showMapLocation('arnon')">
+              <span class="map-pin-label">Río Arnón</span>
+            </div>
+            <div class="map-pin" style="top:35%; left:58%;" onclick="showMapLocation('hesbon')">
+              <span class="map-pin-label">Hesbón</span>
+            </div>
+            <div class="map-pin" style="top:20%; left:65%;" onclick="showMapLocation('basan')">
+              <span class="map-pin-label">Basán</span>
+            </div>
+            <div class="map-pin" style="top:28%; left:60%;" onclick="showMapLocation('galaad')">
+              <span class="map-pin-label">Galaad</span>
+            </div>
+            <div class="map-pin" style="top:32%; left:48%;" onclick="showMapLocation('jordan')">
+              <span class="map-pin-label">Río Jordán</span>
+            </div>
+            <div class="map-pin" style="top:38%; left:50%;" onclick="showMapLocation('pisga')">
+              <span class="map-pin-label">Monte Pisga</span>
+            </div>
+
+            <!-- Map Popup -->
+            <div id="mapPopup" class="map-card-popup">
+              <div id="mapPopupTitle" class="map-card-title">Lugar Seleccionado</div>
+              <p id="mapPopupDesc" style="font-size:0.95rem; line-height:1.4;">Haz clic en cualquier marcador del mapa para visualizar la importancia bíblica y geográfica de este punto estratégico en Deuteronomio.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 10: PALABRAS CLAVE ================= -->
+        <section id="page-10" class="book-page">
+          <div class="book-page-decoration"></div>
+          <div class="corner-flourish top-left"></div><div class="corner-flourish top-right"></div>
+          <div class="corner-flourish bottom-left"></div><div class="corner-flourish bottom-right"></div>
+          <div class="corner-fold-hint-left" onclick="prevPage()" title="Volver hoja atrás"></div>
+          <div class="corner-fold-hint" onclick="nextPage()" title="Pasar hoja adelante"></div>
+
+          <div class="page-header-tag">
+            <span class="page-chapter-badge">Capítulo 7 &bull; Análisis Léxico</span>
+            <h2 class="page-title">Nube de Palabras Teológicas Clave</h2>
+            <p class="page-subtitle">Las palabras de mayor tamaño representan los conceptos centrales articulados por Moisés.</p>
+          </div>
+
+          <div class="word-cloud-container">
+            <span class="word-tag size-xl" title="El Dios soberano del pacto">Dios</span>
+            <span class="word-tag size-xl" title="Pueblo escogido de la promesa">Israel</span>
+            <span class="word-tag size-xl" title="Respuesta requerida ante el pacto">Obediencia</span>
+            <span class="word-tag size-lg" title="Líder y mediador del discurso">Moisés</span>
+            <span class="word-tag size-lg" title="Confianza activa en la promesa">Fe</span>
+            <span class="word-tag size-lg" title="Facultad espiritual para no olvidar">Memoria</span>
+            <span class="word-tag size-lg" title="Alianza sagrada e inquebrantable">Pacto</span>
+            <span class="word-tag size-lg" title="Lugar de prueba y sustentación">Desierto</span>
+            <span class="word-tag size-lg" title="Herencia jurada a los patriarcas">Tierra Prometida</span>
+            <span class="word-tag size-md" title="Mandato Divino">Promesa</span>
+            <span class="word-tag size-md" title="Monte del Pacto">Horeb</span>
+            <span class="word-tag size-md" title="Lugar de prueba">Cades</span>
+            <span class="word-tag size-md" title="Sucesor de Moisés">Josué</span>
+            <span class="word-tag size-md" title="Espía con espíritu diferente">Caleb</span>
+            <span class="word-tag size-md" title="Triunfo concedido por Dios">Victoria</span>
+            <span class="word-tag size-md" title="Falsa adoración prohibida">Idolatría</span>
+            <span class="word-tag size-sm" title="Carácter de Dios y su pueblo">Santidad</span>
+            <span class="word-tag size-sm" title="Formación de relevo generacional">Liderazgo</span>
+            <span class="word-tag size-sm" title="Atributo eterno de Jehová">Fidelidad</span>
+            <span class="word-tag size-sm" title="Estatutos y decretos">Mandamientos</span>
+            <span class="word-tag size-sm" title="Acción constante">Recordar</span>
+            <span class="word-tag size-sm" title="Oír atentamente la Palabra">Escuchar</span>
+            <span class="word-tag size-sm" title="Movimiento de fe hacia el futuro">Avanzar</span>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 11: ENSEÑANZAS TEOLÓGICAS ================= -->
+        <section id="page-11" class="book-page">
+          <div class="book-page-decoration"></div>
+          <div class="corner-flourish top-left"></div><div class="corner-flourish top-right"></div>
+          <div class="corner-flourish bottom-left"></div><div class="corner-flourish bottom-right"></div>
+          <div class="corner-fold-hint-left" onclick="prevPage()" title="Volver hoja atrás"></div>
+          <div class="corner-fold-hint" onclick="nextPage()" title="Pasar hoja adelante"></div>
+
+          <div class="page-header-tag">
+            <span class="page-chapter-badge">Capítulo 8 &bull; Infografía Académica</span>
+            <h2 class="page-title">Pilares Teológicos de Deuteronomio 1–4</h2>
+          </div>
+
+          <div class="teachings-grid">
+            <div class="teaching-card">
+              <div class="teaching-icon"><svg viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 4.5l7.5 13h-15L12 6.5z"/></svg></div>
+              <div class="teaching-title">1. DIOS ES FIEL</div>
+              <p class="teaching-desc">Dios acompañó, guardó y sustentó a Israel durante cada día de su peregrinaje por el árido desierto. Su fidelidad al pacto es inquebrantable.</p>
+            </div>
+
+            <div class="teaching-card">
+              <div class="teaching-icon"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></div>
+              <div class="teaching-title">2. LA OBEDIENCIA ES FUNDAMENTAL</div>
+              <p class="teaching-desc">Escuchar atenta y reverentemente la Palabra de Dios debe traducirse inmediatamente en una obediencia práctica y constante.</p>
+            </div>
+
+            <div class="teaching-card">
+              <div class="teaching-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg></div>
+              <div class="teaching-title">3. LA INCREDULIDAD TIENE CONSECUENCIAS</div>
+              <p class="teaching-desc">La generación de Cades-barnea que rehusó confiar en la promesa de Dios perdió la oportunidad de ingresar y disfrutar de Canaán.</p>
+            </div>
+
+            <div class="teaching-card">
+              <div class="teaching-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></div>
+              <div class="teaching-title">4. DEBEMOS RECORDAR LAS OBRAS DE DIOS</div>
+              <p class="teaching-desc">La memoria espiritual activa y la transmisión histórica fortalecen la fe de las presentes y futuras generaciones.</p>
+            </div>
+
+            <div class="teaching-card">
+              <div class="teaching-icon"><svg viewBox="0 0 24 24"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C5.93 2 1 6.93 1 13s4.93 11 11 11 11-4.93 11-11S18.07 2 12 2z"/></svg></div>
+              <div class="teaching-title">5. DIOS ES ÚNICO (MONOTEÍSMO RADICAL)</div>
+              <p class="teaching-desc">Deuteronomio 4 prohíbe tajantemente la idolatría y afirma que solo Jehová es Dios arriba en el cielo y abajo en la tierra.</p>
+            </div>
+
+            <div class="teaching-card">
+              <div class="teaching-icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+              <div class="teaching-title">6. DIOS PREPARA NUEVOS LÍDERES</div>
+              <p class="teaching-desc">Moisés comisiona, fortalece y encomienda formalmente a Josué para asegurar la continuidad de la misión encomendada.</p>
+            </div>
+
+            <div class="teaching-card">
+              <div class="teaching-icon"><svg viewBox="0 0 24 24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0011 15.9V19H7v2h10v-2h-4v-3.1c2.18-.36 3.88-2.06 4.39-4.34C19.08 10.63 21 8.55 21 6V5c0-1.1-.9-2-2-2z"/></svg></div>
+              <div class="teaching-title">7. DIOS CONCEDE LA VICTORIA</div>
+              <p class="teaching-desc">Las aplastantes victorias sobre Sehón y Og evidencian que Israel triunfa no por su propio poder, sino porque Dios pelea por ellos.</p>
+            </div>
+
+            <div class="teaching-card">
+              <div class="teaching-icon"><svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg></div>
+              <div class="teaching-title">8. CONSECUENCIAS DE LA DESOBEDIENCIA</div>
+              <p class="teaching-desc">El pacto con Dios implica una alta responsabilidad ética; la apostasía trae dispersión y corrección divina sobre la nación.</p>
+            </div>
+
+            <div class="teaching-card">
+              <div class="teaching-icon"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
+              <div class="teaching-title">9. DIOS OFRECE MISERICORDIA</div>
+              <p class="teaching-desc">Deuteronomio 4:29 enseña que aun en la angustia o el exilio, si el pueblo busca sinceramente a Dios con todo el corazón, lo hallará.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 12: APLICACIONES PARA LA IGLESIA ACTUAL ================= -->
+        <section id="page-12" class="book-page">
+          <div class="book-page-decoration"></div>
+          <div class="corner-flourish top-left"></div><div class="corner-flourish top-right"></div>
+          <div class="corner-flourish bottom-left"></div><div class="corner-flourish bottom-right"></div>
+          <div class="corner-fold-hint-left" onclick="prevPage()" title="Volver hoja atrás"></div>
+          <div class="corner-fold-hint" onclick="nextPage()" title="Pasar hoja adelante"></div>
+
+          <div class="page-header-tag">
+            <span class="page-chapter-badge">Capítulo 9 &bull; Praxis Eclesial</span>
+            <h2 class="page-title">Aplicaciones para la Iglesia Contemporánea</h2>
+          </div>
+
+          <div class="application-grid">
+            <div class="app-column-header">Enseñanza Bíblica (Deuteronomio 1–4)</div>
+            <div class="app-column-header">Aplicación a la Iglesia Actual</div>
+
+            <!-- Pair 1 -->
+            <div class="app-biblical-card">
+              <div class="app-topic-title">1. Recordar las Obras de Dios</div>
+              <p>Moisés exige al pueblo recordar la fidelidad de Dios en el desierto para no olvidar su pacto.</p>
+            </div>
+            <div class="app-modern-card">
+              <div class="app-topic-title">Memoria Espiritual Congregacional</div>
+              <p>La iglesia debe cultivar espacios de testimonio y gratitud, recordando cómo Dios la ha sostenido en crisis.</p>
+            </div>
+
+            <!-- Pair 2 -->
+            <div class="app-biblical-card">
+              <div class="app-topic-title">2. Obedecer la Palabra Revelada</div>
+              <p>No basta con oír los decretos en Horeb; se exige ponerlos por obra sin añadir ni quitar.</p>
+            </div>
+            <div class="app-modern-card">
+              <div class="app-topic-title">Ortopraxia Cristiana</div>
+              <p>El conocimiento teológico debe manifestarse en integridad ética, amor al prójimo y obediencia a las Escrituras.</p>
+            </div>
+
+            <!-- Pair 3 -->
+            <div class="app-biblical-card">
+              <div class="app-topic-title">3. Aprender de los Errores del Pasado</div>
+              <p>La historia de la generación incrédula de Cades-barnea sirve de advertencia solemne.</p>
+            </div>
+            <div class="app-modern-card">
+              <div class="app-topic-title">Madurez Eclesial</div>
+              <p>Evaluar la historia eclesial para evitar patrones de división, murmuración o falta de fe frente a los desafíos.</p>
+            </div>
+
+            <!-- Pair 4 -->
+            <div class="app-biblical-card">
+              <div class="app-topic-title">4. Confiar ante Gigantes (Og y Sehón)</div>
+              <p>Los enemigos imponentes no deben doblegar la fe porque Dios pelea por su pueblo.</p>
+            </div>
+            <div class="app-modern-card">
+              <div class="app-topic-title">Valentía Misionera y Pastoral</div>
+              <p>Enfrentar los desafíos culturales, la oposición o la escasez confiando en el poder supremo de Jesucristo.</p>
+            </div>
+
+            <!-- Pair 5 -->
+            <div class="app-biblical-card">
+              <div class="app-topic-title">5. Formación y Relevo de Líderes</div>
+              <p>Moisés anima, fortalece y transfiere autoridad a Josué frente a todo el pueblo.</p>
+            </div>
+            <div class="app-modern-card">
+              <div class="app-topic-title">Discipulado Generacional</div>
+              <p>Mentoría intencional de jóvenes servidores para garantizar la continuidad del ministerio pastoral y misionero.</p>
+            </div>
+
+            <!-- Pair 6 -->
+            <div class="app-biblical-card">
+              <div class="app-topic-title">6. Rechazar los Ídolos Modernos</div>
+              <p>Advertencia radical contra imágenes, figuras o culto a los astros en Deuteronomio 4.</p>
+            </div>
+            <div class="app-modern-card">
+              <div class="app-topic-title">Examen del Corazón</div>
+              <p>Identificar y derribar sustitutos modernos de Dios como el materialismo, la fama, el poder o el egoísmo.</p>
+            </div>
+
+            <!-- Pair 7 -->
+            <div class="app-biblical-card">
+              <div class="app-topic-title">7. Unidad y Solidaridad Fraternal</div>
+              <p>Las tribus transjordánicas debían cruzar armadas para ayudar a sus hermanos a conquistar su herencia.</p>
+            </div>
+            <div class="app-modern-card">
+              <div class="app-topic-title">Comunión y Cooperación Intercongregacional</div>
+              <p>La iglesia no vive aislada; las comunidades más fuertes deben apoyar a las iglesias más vulnerables.</p>
+            </div>
+
+            <!-- Pair 8 -->
+            <div class="app-biblical-card">
+              <div class="app-topic-title">8. Dios de Oportunidades y Gracia</div>
+              <p>Deuteronomio 4:29 promete que quien busque sinceramente a Dios en su angustia lo hallará.</p>
+            </div>
+            <div class="app-modern-card">
+              <div class="app-topic-title">Mensaje de Restauración y Esperanza</div>
+              <p>Proclamar la gracia transformadora del Evangelio que restaura al pecador arrepentido.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 13: VERSÍCULOS CLAVE ================= -->
+        <section id="page-13" class="book-page">
+          <div class="book-page-decoration"></div>
+          <div class="corner-flourish top-left"></div><div class="corner-flourish top-right"></div>
+          <div class="corner-flourish bottom-left"></div><div class="corner-flourish bottom-right"></div>
+          <div class="corner-fold-hint-left" onclick="prevPage()" title="Volver hoja atrás"></div>
+          <div class="corner-fold-hint" onclick="nextPage()" title="Pasar hoja adelante"></div>
+
+          <div class="page-header-tag">
+            <span class="page-chapter-badge">Capítulo 10 &bull; Galería Bíblica</span>
+            <h2 class="page-title">Versículos Clave de Deuteronomio 1–4</h2>
+          </div>
+
+          <div class="carousel-viewport">
+            <div id="verseCard" class="carousel-card">
+              <div id="verseRef" class="carousel-verse-ref">Deuteronomio 1:8</div>
+              <div id="verseQuote" class="carousel-verse-quote">&ldquo;Mirad, yo os he entregado la tierra; entrad y poseed la tierra que Jehová juró a vuestros padres Abraham, Isaac y Jacob, que les daría a ellos y a su descendencia después de ellos.&rdquo;</div>
+              <div id="verseExegesis" class="carousel-verse-explanation"><strong>Enseñanza Exegética:</strong> Dios llama al pueblo a actuar con determinación sobre la base de una promesa jurada previamente a los patriarcas.</div>
+            </div>
+
+            <div class="carousel-controls">
+              <button class="carousel-btn" onclick="prevVerse()" aria-label="Versículo anterior">&larr;</button>
+              <div id="carouselDots" class="carousel-dots"></div>
+              <button class="carousel-btn" onclick="nextVerse()" aria-label="Siguiente versículo">&rarr;</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 14: CONCLUSIÓN Y BIBLIOGRAFÍA ================= -->
+        <section id="page-14" class="book-page">
+          <div class="book-page-decoration"></div>
+          <div class="corner-flourish top-left"></div><div class="corner-flourish top-right"></div>
+          <div class="corner-flourish bottom-left"></div><div class="corner-flourish bottom-right"></div>
+          <div class="corner-fold-hint-left" onclick="prevPage()" title="Volver hoja atrás"></div>
+
+          <div class="page-header-tag">
+            <span class="page-chapter-badge">Capítulo 11 &bull; Síntesis Final</span>
+            <h2 class="page-title">Conclusión General y Bibliografía Académica</h2>
+          </div>
+
+          <div class="page-content drop-cap">
+            <p style="margin-bottom: 1.25rem;">Deuteronomio 1–4 nos invita magistralmente a mirar el pasado para comprender el presente y caminar con paso firme hacia el futuro con fe. Moisés recuerda las experiencias dolorosas y victoriosas del pueblo de Israel para demostrar que Dios siempre estuvo presente, guiando, sosteniendo, corrigiendo y dando dirección a su pueblo escogido.</p>
+
+            <p style="margin-bottom: 1.25rem;">Al mismo tiempo, estos cuatro capítulos iniciales muestran que la incredulidad y la desobediencia traen graves consecuencias. Por eso, recordar las obras portentosas de Dios debe llevarnos inevitablemente a una respuesta coherente de obediencia, devoción y fidelidad.</p>
+
+            <div class="slogan-ribbon" style="margin: 2rem 0;">
+              <div class="slogan-main">Recordar &rarr; Aprender &rarr; Creer &rarr; Obedecer &rarr; Avanzar</div>
+              <div class="slogan-quote">&ldquo;El pasado no debe ser solamente un recuerdo distante; debe convertirse en una enseñanza viva que nos guíe a caminar con Dios hacia aquello que Él ha preparado.&rdquo;</div>
+            </div>
+
+            <h3 style="font-family:var(--font-heading); color:var(--crimson-accent); margin-top:2.25rem; margin-bottom:1.25rem; border-bottom:2px solid var(--border-gold); padding-bottom:0.65rem; clear:both;">BIBLIOGRAFÍA Y FUENTES DE CONSULTA ACADÉMICA</h3>
+
+            <ul class="biblio-list">
+              <li class="biblio-item">
+                <span class="biblio-author">Sociedades Bíblicas Unidas.</span> (1960). <span class="biblio-title">Santa Biblia, Versión Reina-Valera 1960 (RVR1960)</span>. Sociedades Bíblicas Unidas.
+              </li>
+              <li class="biblio-item">
+                <span class="biblio-author">Craigie, Peter C.</span> (1976). <span class="biblio-title">The Book of Deuteronomy</span>. The New International Commentary on the Old Testament. Wm. B. Eerdmans Publishing.
+              </li>
+              <li class="biblio-item">
+                <span class="biblio-author">Thompson, J. A.</span> (1974). <span class="biblio-title">Deuteronomy: An Introduction and Commentary</span>. Tyndale Old Testament Commentaries. InterVarsity Press.
+              </li>
+              <li class="biblio-item">
+                <span class="biblio-author">Merrill, Eugene H.</span> (1994). <span class="biblio-title">Deuteronomy</span>. The New American Commentary (Vol. 4). Broadman & Holman Publishers.
+              </li>
+              <li class="biblio-item">
+                <span class="biblio-author">Wright, Christopher J. H.</span> (1996). <span class="biblio-title">Deuteronomy</span>. New International Biblical Commentary. Hendrickson Publishers.
+              </li>
+              <li class="biblio-item">
+                <span class="biblio-author">Walton, John H., Matthews, Victor H., & Chavalas, Mark W.</span> (2000). <span class="biblio-title">Comentario del Contexto Cultural de la Biblia: Antiguo Testamento</span>. Editorial Clie / IVP.
+              </li>
+              <li class="biblio-item">
+                <span class="biblio-author">Archer, Gleason L.</span> (1994). <span class="biblio-title">Reseña Crítica de una Introducción al Antiguo Testamento</span>. Editorial Portavoz.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- App Footer Controls -->
+  <footer class="app-footer">
+    <div class="nav-btn-group">
+      <button id="btnPrevPage" class="btn-nav" onclick="prevPage()" aria-label="Página anterior">&larr; Anterior</button>
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-text">
+        <span id="pageIndicatorText">Página 1 de 14</span>
+        <span id="progressPercentText">7% completado</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div id="progressBarFill" class="progress-bar-fill"></div>
+      </div>
+    </div>
+
+    <div class="nav-btn-group">
+      <button id="btnNextPage" class="btn-nav" onclick="nextPage()" aria-label="Siguiente página">Siguiente &rarr;</button>
+    </div>
+  </footer>
+
+  <!-- Universal Modal Dialog -->
+  <div id="universalModal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal()" aria-label="Cerrar ventana">&times;</button>
+      <div id="modalHeader" style="font-family:var(--font-heading); font-size:1.35rem; font-weight:800; color:var(--crimson-accent); margin-bottom:1rem; border-bottom:2px solid var(--border-gold); padding-bottom:0.65rem;">Título del Modal</div>
+      <div id="modalBody" style="font-size:1.05rem; line-height:1.65; color:var(--text-primary);">
+        Contenido detallado.
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
